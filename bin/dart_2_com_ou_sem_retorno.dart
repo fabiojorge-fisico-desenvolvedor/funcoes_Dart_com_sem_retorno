@@ -4,14 +4,19 @@ import 'package:dart_2_com_ou_sem_retorno/dart_2_com_ou_sem_retorno.dart'
 import 'dart:io';
 
 void main(List<String> arguments) {
-  imprimirNome('joão');
+  var mensagem = devolverOla();
+  print(mensagem);
 }
 
-// funcao sem retorno e com parâmetros
+// funcao com retorno e sem parâmetros
 void imprimir() {
   print('olá pessoal');
 }
 
 void imprimirNome(String nome) {
   print('olá $nome');
+}
+
+String devolverOla() {
+  return 'olá pessoal!';
 }
