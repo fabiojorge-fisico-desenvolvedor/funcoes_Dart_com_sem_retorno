@@ -6,9 +6,9 @@ import 'dart:io';
 void main(List<String> arguments) {
   //imprimirNome('Jorge');// necessário alterar para função a ser utilizada
 
-  var mensagem = devolverOla();
+  var mensagem = devolverOlaNome('Snow');
   // print(mensagem);
-  print(devolverOla());// FUNÇÃO DENTRO DE UMA FUNÇÃO 
+  print(mensagem); // FUNÇÃO DENTRO DE UMA FUNÇÃO
 }
 /*sem retorno e sem parâmetros (basta liberar a função comentario dessa região)
  void imprimir (){
@@ -24,7 +24,17 @@ void main(List<String> arguments) {
 
 //com retorno e sem parâmetro
 
-String devolverOla() {
+/*String devolverOla() {
   // com retorno chamo a string e coloco a palavra return para retornar, por exemplo, sem parâmetro ...nada dentro do parentese
   return 'olá joão!';
+}*/
+
+// função com retorno e com parâmetro
+
+void imprimirNome(String nome) {
+  print('olá $nome');
+}
+
+String devolverOlaNome(String nome) {
+  return ('ola $nome');
 }
