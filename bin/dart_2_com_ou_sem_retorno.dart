@@ -6,9 +6,10 @@ import 'dart:io';
 void main(List<String> arguments) {
   //imprimirNome('Jorge');// necessário alterar para função a ser utilizada
 
-  var mensagem = devolverOlaNome('Snow'); // <<<<<<================aqui que chamo variavel mensagem da função dada lá embaixo
+  var mensagem = devolverOlaNome(
+      'Snow'); // <<<<<<================aqui que chamo variavel mensagem da função dada lá embaixo
   // print(mensagem);
-  print(mensagem); // FUNÇÃO DENTRO DE UMA FUNÇÃO
+  print(devolverOlaNome('Snow')); // FUNÇÃO DENTRO DE UMA FUNÇÃO
 }
 /*sem retorno e sem parâmetros (basta liberar a função comentario dessa região)
  void imprimir (){
