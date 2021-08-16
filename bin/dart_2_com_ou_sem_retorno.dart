@@ -7,7 +7,8 @@ void main(List<String> arguments) {
   //imprimirNome('Jorge');// necessário alterar para função a ser utilizada
 
   var mensagem = devolverOla();
-  print(mensagem);
+  // print(mensagem);
+  print(devolverOla());// FUNÇÃO DENTRO DE UMA FUNÇÃO 
 }
 /*sem retorno e sem parâmetros (basta liberar a função comentario dessa região)
  void imprimir (){
@@ -25,5 +26,5 @@ void main(List<String> arguments) {
 
 String devolverOla() {
   // com retorno chamo a string e coloco a palavra return para retornar, por exemplo, sem parâmetro ...nada dentro do parentese
-  return 'olá pessoal!';
+  return 'olá joão!';
 }
