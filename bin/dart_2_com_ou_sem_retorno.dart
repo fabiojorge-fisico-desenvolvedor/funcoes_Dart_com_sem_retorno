@@ -4,11 +4,12 @@ import 'package:dart_2_com_ou_sem_retorno/dart_2_com_ou_sem_retorno.dart'
 import 'dart:io';
 
 void main(List<String> arguments) {
-  imprimirOla('joaquim', 0);
+  imprimirOla('Joaquim');// eu retiri o valor 1 daqui, assim o padrão vai automaticamente para o zero.
 }
 
-void imprimirOla(String nome, int opcao) {
-  print('ola $nome');
+void imprimirOla(String nome, {int opcao = 0}) {
+  //=====> NOmeado coloca a chave porque aí a posição não importa deixando ele opcional
+  print('ola $nome!');
   if (opcao == 1) {
     print('tudo bem ?');
   } else {
