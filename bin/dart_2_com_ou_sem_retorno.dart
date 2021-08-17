@@ -6,17 +6,15 @@ import 'dart:io';
 void main(List<String> arguments) {
   imprimirOla('Joaquim',
       opcao:
-          1); // eu retiri o valor 1 daqui, assim o padrão vai automaticamente para o zero.
+          0); // eu retiri o valor 1 daqui, assim o padrão vai automaticamente para o zero.
 }
 
 void imprimirOla(String nome, {int opcao = 0}) {
   //=====> NOmeado coloca a chave porque aí a posição não importa deixando ele opcional
   print('ola $nome!');
-  if (opcao == 1) {
-    print('tudo bem ?');
-  } else {
-    print('como vai?');
-  }
+
+  var mensagem = (opcao == 0) ? 'Tudo bem?' : 'como vai?'; //==> um if else mais curto
+  print(mensagem);
 }
 
 /*sem retorno e sem parâmetros (basta liberar a função comentario dessa região)
