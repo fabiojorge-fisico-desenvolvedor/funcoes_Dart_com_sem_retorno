@@ -4,16 +4,16 @@ import 'package:dart_2_com_ou_sem_retorno/dart_2_com_ou_sem_retorno.dart'
 import 'dart:io';
 
 void main(List<String> arguments) {
-  imprimirOla('Joaquim',
-      opcao:
-          0); // eu retiri o valor 1 daqui, assim o padrão vai automaticamente para o zero.
+  imprimirOla(
+      'Joaquim'); // eu retiri o valor 1 daqui, assim o padrão vai automaticamente para o zero.
 }
 
 void imprimirOla(String nome, {int opcao = 0}) {
   //=====> NOmeado coloca a chave porque aí a posição não importa deixando ele opcional
   print('ola $nome!');
 
-  var mensagem = (opcao == 0) ? 'Tudo bem?' : 'como vai?'; //==> um if else mais curto
+  var mensagem =
+      (opcao == 0) ? 'Tudo bem?' : 'como vai?'; //==> um if else mais curto
   print(mensagem);
 }
 
