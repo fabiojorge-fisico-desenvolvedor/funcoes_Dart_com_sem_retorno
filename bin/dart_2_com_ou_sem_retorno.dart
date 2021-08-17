@@ -4,13 +4,18 @@ import 'package:dart_2_com_ou_sem_retorno/dart_2_com_ou_sem_retorno.dart'
 import 'dart:io';
 
 void main(List<String> arguments) {
-  //imprimirNome('Jorge');// necessário alterar para função a ser utilizada
-
-  var mensagem = devolverOlaNome(
-      'Snow'); // <<<<<<================aqui que chamo variavel mensagem da função dada lá embaixo
-  // print(mensagem);
-  print(devolverOlaNome('Snow')); // FUNÇÃO DENTRO DE UMA FUNÇÃO
+  imprimirOla('joaquim', 0);
 }
+
+void imprimirOla(String nome, int opcao) {
+  print('ola $nome');
+  if (opcao == 1) {
+    print('tudo bem ?');
+  } else {
+    print('como vai?');
+  }
+}
+
 /*sem retorno e sem parâmetros (basta liberar a função comentario dessa região)
  void imprimir (){
 
@@ -32,10 +37,10 @@ void main(List<String> arguments) {
 
 // função com retorno e com parâmetro
 
-void imprimirNome(String nome) {
+/*void imprimirNome(String nome) {
   print('olá $nome');
 }
 
 String devolverOlaNome(String nome) {
   return ('ola $nome');
-}
+}**/
